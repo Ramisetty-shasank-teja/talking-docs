@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(135deg, #1d1f20, #25292e);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #181a1b;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0,255,200,0.2);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #00f5a0, #00d9f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.upload-label {
+  font-size: 2em;
+  cursor: pointer;
+  display: inline-block;
+  color: #00f5a0;
+  margin: 20px 0;
+}
+
+#pdfInput {
+  display: none;
+}
+
+#voiceSelect {
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+#textDisplay {
+  margin-top: 20px;
+  text-align: left;
+  max-height: 300px;
+  overflow-y: auto;
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1em;
+  border: 2px solid transparent;
+}
+
+.highlight {
+  border-color: #00f5a0;
+  transition: border-color 0.3s ease;
+}
+
+.controls button {
+  margin: 10px 10px 0 10px;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #00f5a0;
+  color: #000;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background: #00c18f;
+}

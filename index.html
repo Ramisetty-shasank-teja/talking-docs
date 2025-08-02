@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VocalInk Pro - AI PDF Reader</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📚 VocalInk Pro</h1>
+    <label class="upload-label" for="pdfInput">➕ Upload PDF</label>
+    <input type="file" id="pdfInput" accept="application/pdf">
+    <br>
+    <label for="voiceSelect">Choose Voice:</label>
+    <select id="voiceSelect"></select>
+
+    <div id="textDisplay"></div>
+
+    <div class="controls">
+      <button onclick="startReading()">▶️ Start</button>
+      <button onclick="pauseReading()">⏸️ Pause</button>
+      <button onclick="resumeReading()">🔁 Resume</button>
+      <button onclick="restartReading()">⏮️ Restart</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
